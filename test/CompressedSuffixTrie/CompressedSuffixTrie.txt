@@ -1,0 +1,17 @@
+this is the implementation of the compact representation of the compressed suffix trie ADT for DNA analyses.
+A template of the compressed suffix trie class is shown as follows:
+public class CompressedSuffixTrie
+{
+/** define data structures for the compressed trie */
+/** Constructor */
+public CompressedSuffixTrie( String f ) // Create a compressed suffix trie from file f
+{ }
+/** Method for finding the first occurrence of a pattern s in the DNA sequence */
+public int findString( String s )
+{ }
+/** Method for computing the degree of similarity of two DNA sequences stored
+in the text files f1 and f2 */
+public static float similarityAnalyser(String f1, String f2, String f3)
+{ }
+}
+The constructor creates a compact representation of the compressed suffix trie from an input text file f that stores a DNA sequence. All the characters of the DNA sequence are A, C, G and T. The findString(s) method has only one parameter: a pattern s. If s appears in the DNA sequence, findString(s) will return the starting index of the first occurrence of s in the DNA sequence. Otherwise, it will return ¨C1. For example, if the DNA sequence is AAACAACTTCGTAAGTATA, then findString(¡°CAACT¡±) will return 3 and findString(¡°GAAG¡±) will return ¨C1. Note that the index of the first character of the DNA sequence is 0.

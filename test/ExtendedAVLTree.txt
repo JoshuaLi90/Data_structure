@@ -1,0 +1,17 @@
+ Public static <K, V> AVLTree<K, V> clone(AVLTree<K,V> tree)
+This class method creates an identical copy of the AVL tree specified by the
+parameter and returns a reference to the new AVL tree. For simplicity, we assume
+that K is integer and V is string.
+ public static <K, V> AVLTree<K, V> merge(AVLTree<K,V> tree1,
+AVLTree<K,V> tree2 )
+This class method merges two AVL trees, tree1 and tree2, into a new tree. After the
+merge, this method reclaims the unused original AVL trees and returns the new AVL
+tree. You need to make this method as fast as possible and analyze its running time in
+big O notation. Put your running time analysis as comments after the code.
+ public static <K, V> void print(AVLTree<K, V> tree)
+This class method creates a new window and prints the AVL tree specified by the
+parameter on the new window. Each internal node is displayed by a circle containing
+its key and each external node is displayed by a rectangle. For simplicity, you may
+assume that K is Integer. You need to choose a proper size for all the circles and a
+proper size for all the rectangles and make sure that this method never prints a tree
+with crossing edges.
